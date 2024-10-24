@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="./Assets/CSS/landingpage.css">
+        <title>Grub.com - log in or sign up</title>
+    </head>
+    <body>
+
+        <!-- Logo on the right hand side of the navbar-->
+       <header>
+        <!--Insert logo here-->
+        <nav nav class="navbar" style="background-color: #e3f2fd;">
+            <section class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./Assets/Images/logo_color_w_trans.png" alt="Logo" width="130" height="150" class="d-inline-block align-text-top">
+              </a>
+        <!--Password and Username LOGIN-->
+              <form class="mb-3 row" action="./html/home.html">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" required>
+                  <label for="floatingInput">Email address </label>
+              </div>
+              <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" required>
+                  <label for="floatingPassword">Password</label>
+                  <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember me?</label>
+                  </div>
+                  <button class="container-md" type="submit" id="loginButton" name="login">Login</button>
+                  <a href="forgotpassword.html" class="d-flex justify-content- enter">Forgot Password?</a>
+              </div>
+          </form>
+            </section>
+          </nav>
+       </header>  
+
+       <div class="p-3 mb-2 bg-body-secondary">
+        <main class="container text-center">
+            <section class="row">
+              <section class="col order-last">
+                <!--Sign up form-->
+                <h1>Sign up</h1>
+                <p>Not a member yet? Sign up now to get access to all the recipes and blogs!</p>
+                <form class="row g-3 needs-validation" id="signupForm" novalidate>
+                  <ul class="nobullet">
+                      <li class="col-md">
+                          <label for="validationCustom01" class="form-label">First name</label>
+                          <input type="text" class="form-control" id="validationCustom01" name="first_name" required>
+                          <div class="valid-feedback">Sounds like a chef!</div>
+                      </li>
+                      <li class="col-md">
+                          <label for="validationCustom02" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="validationCustom02" name="last_name" required>
+                          <div class="valid-feedback">Yes CHEF!</div>
+                      </li>
+                      <li class="col-md">
+                          <label for="validationEmail" class="form-label">E-mail</label>
+                          <div class="input-group has-validation">
+                              <input type="email" class="form-control" id="validationEmail" name="email" required>
+                          </div>
+                      </li>
+                      <li class="col-md">
+                          <label for="confirmEmail" class="form-label">Confirm E-mail</label>
+                          <div class="input-group has-validation">
+                              <input type="email" class="form-control" id="confirmEmail" name="confirm_email" required>
+                          </div>
+                      </li>
+                      <li class="col-md">
+                          <label for="password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="password" name="password" required>
+                      </li>
+                      <li class="col-md">
+                          <label for="confirmPassword" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" id="confirmPassword" name="confirm_password" required>
+                      </li>
+                      &nbsp;
+                      <!--Terms and condition modal button-->
+                      <div>
+                        <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                               Grub's Terms and Conditions
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Terms and Conditon</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container my-5">
+                                            <h3 class="mb-4">Terms and Conditions</h3>
+                                            <p><strong>Last Updated: [17-9-2024]</strong></p>
+                                            <p>Welcome to <strong>GRUB</strong>! We are excited to have you on our recipe and cooking social media platform. By accessing or using GRUB, you agree to comply with and be bound by these Terms and Conditions. Please read them carefully.</p>
+                                        
+                                            <h4>1. Acceptance of Terms</h4>
+                                            <p>By accessing or using <strong>GRUB</strong> ("we", "our", "us"), you agree to comply with and be bound by these Terms and Conditions and our Privacy Policy. If you do not agree to these terms, please do not use our platform.</p>
+                                        
+                                            <h4>2. User Accounts</h4>
+                                            <ul>
+                                                <li><strong>Eligibility:</strong> To create an account, you must be at least 13 years old. If you are under 18, you may only use our platform with parental consent.</li>
+                                                <li><strong>Responsibility:</strong> You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</li>
+                                            </ul>
+                                        
+                                            <h4>3. Content</h4>
+                                            <ul>
+                                                <li><strong>User Content:</strong> You retain ownership of any content you post on GRUB, such as recipes, images, and comments. By posting content, you grant us a non-exclusive, royalty-free, perpetual, and worldwide license to use, display, and distribute your content on our platform.</li>
+                                                <li><strong>Prohibited Content:</strong> You may not post content that is illegal, offensive, defamatory, or infringes on the rights of others. We reserve the right to remove any content that violates these Terms and Conditions.</li>
+                                            </ul>
+                                        
+                                            <h4>4. Intellectual Property</h4>
+                                            <ul>
+                                                <li><strong>Platform Content:</strong> All content on GRUB, including text, graphics, logos, and software, is the property of GRUB or its licensors and is protected by intellectual property laws.</li>
+                                                <li><strong>License:</strong> You are granted a limited, non-exclusive, non-transferable license to access and use the platform for personal, non-commercial purposes.</li>
+                                            </ul>
+                                        
+                                            <h4>5. User Conduct</h4>
+                                            <ul>
+                                                <li><strong>Prohibited Activities:</strong> You agree not to engage in any activities that could harm or disrupt our platform, including but not limited to hacking, spamming, and unauthorized data collection.</li>
+                                                <li><strong>Reporting Violations:</strong> If you encounter any content or conduct that violates these Terms and Conditions, please report it to us.</li>
+                                            </ul>
+                                        
+                                            <h4>6. Privacy</h4>
+                                            <p>Your privacy is important to us. Our Privacy Policy explains how we collect, use, and protect your personal information. By using our platform, you consent to our data practices as described in the Privacy Policy.</p>
+                                        
+                                            <h4>7. Disclaimers and Limitation of Liability</h4>
+                                            <ul>
+                                                <li><strong>Disclaimer:</strong> GRUB is provided "as is" and "as available" without warranties of any kind, whether express or implied. We do not warrant that the platform will be error-free or uninterrupted.</li>
+                                                <li><strong>Limitation of Liability:</strong> To the fullest extent permitted by law, GRUB shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of our platform.</li>
+                                            </ul>
+                                        
+                                            <h4>8. Changes to Terms</h4>
+                                            <p>We may update these Terms and Conditions from time to time. Any changes will be posted on this page, and your continued use of the platform constitutes acceptance of the updated terms.</p>
+                                        
+                                            <h4>9. Termination</h4>
+                                            <p>We reserve the right to terminate or suspend your account and access to the platform at our sole discretion, with or without cause and with or without notice.</p>
+                                        
+                                            <h4>10. Governing Law</h4>
+                                            <p>These Terms and Conditions are governed by and construed in accordance with the laws of [Your Jurisdiction]. Any disputes arising under or in connection with these Terms and Conditions shall be subject to the exclusive jurisdiction of the courts located in [Your Jurisdiction].</p>
+                                        
+                                            <h4>11. Contact Us</h4>
+                                            <p>If you have any questions or concerns about these Terms and Conditions, please contact us at:</p>
+                                            <ul>
+                                                <li><strong>Email:</strong> support@grub.com</li>
+                                                <li><strong>Address:</strong> melbourne</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE.</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> I AGREE </button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                      </div>
+                     
+                      &nbsp;
+                      <div class="col-12">
+                          <button class="btn btn-primary" type="submit" id="signupButton" name="signup">SIGN UP</button>
+                      </div>
+
+                       
+                  </ul>
+              </form>
+                
+               
+                <!-- First DOM-->
+
+              </section>
+              <section class="col">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./Assets/Images/vecteezy_3d-illustration-of-blue-medical-chat_32480465.png" class="d-block w-100" alt="icon of blue medical and triple dot inside a speech bubble">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Share and connect your food creations to everyone!</h5>
+                            <p>Sign Up now to connect to food lovers around the globe!</p>
+                          </div>
+                    </div>
+                      <div class="carousel-item">
+                        <img src="./Assets/Images/Smilling-chef-hoiding-tray-and-menu-on-transparent-PNG.png" class="d-block w-100" alt="Smilling chef holding tray and menu">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Get access to all the recipes and blogs</h5>
+                            <p>Sign up now to get access to all the recipes and blogs</p>
+                          </div>
+                    </div>
+                      <div class="carousel-item">
+                        <img src="./Assets/Images/vecteezy_high-quality-mouth-watering-delicious-food-image-isolated_47820735.png" class="d-block w-100" alt="Woman taking photo of food with mobile phone">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Share your food creations</h5>
+                            <p>Share your food creations with the world!</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              </section>
+            </section>
+          
+        </main>
+       
+       
+        </div>
+    </body>
+    <script src="./Assets/JS/bootstrap.min.js"></script>
+    <script src="./Assets/JS/landingpage.js">  </script> 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>Grub.com</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Trending recipes</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

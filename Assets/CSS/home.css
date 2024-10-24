@@ -1,0 +1,121 @@
+/* for buttons, have 4 x images with text in the center. The text will be a link to open that page
+Add a hover effect to the text */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+footer ul li {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.logo{ 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search{
+    margin: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.srch{
+    background-color: white;
+    text-align: center;
+}
+
+.btn{
+    background-color: white;
+    padding: 0 10px;
+    width: 100px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+.flex-container{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box{
+    width: 50%;
+    height: 200px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 20px;
+}
+
+#breakfast{
+    background-image: url("../Images/homepage_breakfast.jpg");
+    height: 200px;
+    width: 700px;
+}
+
+#lunch{
+    background-image: url("../Images/homepage_lunch.jpg");
+    height: 200px;
+    width: 700px;
+}
+
+#dinner{
+    background-image: url("../Images/homepage_dinner.jpg");
+    height: 200px;
+    width: 700px;
+}
+
+#dessert{
+    background-image: url("../Images/homepage_dessert.webp");
+    height: 200px;
+    width: 700px;
+}
+
+#breakfast:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: black;
+}
+
+#lunch:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: black;
+}
+
+#dinner:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: black;
+}
+
+#dessert:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: black;
+}
